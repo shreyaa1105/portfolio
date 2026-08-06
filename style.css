@@ -1,0 +1,1431 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+*{
+    margin: 0px;
+}
+
+body{
+    overflow-x: hidden;
+}
+html{
+    scroll-behavior: smooth;
+}
+#home1,
+#about1,
+#work1,
+#skills,
+#contact1{
+    scroll-margin-top: 90px;
+}
+.header{
+    width:100%;
+    height:70px;
+    position: sticky;
+    top:0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color:black;
+    box-shadow:
+        0 0  5px #C88A3D,
+        0 0 15px rgba(200, 138, 61, 0.6),
+        0 0 30px rgba(200, 138, 61, 0.25);
+    
+    z-index: 1000;
+    
+}
+
+
+
+.name{
+     font-family: "EB Garamond", serif;
+     font-size: 25px;
+     color: white;
+     font-weight: bolder;
+     padding: 20px;
+}
+.name:nth-child(1):after{
+    content: "THALE";
+    color: #B9824A
+    
+}
+.button1,
+.button2,
+.button3,
+.button4,
+.resume-btn,
+.resume-btn2{
+
+
+transition:.4s;
+
+}
+
+
+.button1:hover,
+.button2:hover,
+.button3:hover,
+.button4:hover,
+.resume-btn:hover,
+.resume-btn2:hover{
+
+
+transform:
+translateY(-5px);
+
+box-shadow:
+0 10px 25px rgba(185,130,74,.5);
+
+}
+.headercontent{
+    display: flex;
+    flex-direction: row;
+    font-family: "Fraunces", serif;
+    color: white;
+    font-size: 15px;
+    margin-right: 130px;
+    margin-top: 18px;
+    gap:30px;
+    font-weight: 400px;
+    font-weight: 400px;
+
+
+}
+.headercontent a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.text{
+    color: white;
+   
+    font-weight: 400px;
+    font-family: "Fraunces", serif;
+
+}
+.text:hover{
+    color: #B9824A;
+    text-decoration: underline;
+    text-underline-offset: 15px;
+    text-decoration-thickness: 3px;
+   
+}
+.text12{
+    color: white;
+   
+    font-weight: 400px;
+    font-family: "Fraunces", serif;
+
+}
+.text12:hover{
+    color: #B9824A;
+    text-decoration: underline;
+    text-underline-offset: 15px;
+    text-decoration-thickness: 3px;
+   
+}
+
+.home{
+    width:100%;
+    height:630px;
+    background-color: #0a0a0a;
+    margin-top: 1px;
+    display: flex;
+    flex-direction: row;
+    border-bottom:  solid 1px gray;
+    
+
+}
+.leftcontent{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    font-family: "Red Hat Text", sans-serif;
+    font-size: 25px;
+    margin-top: 170px;
+    margin-left: 160px;
+}
+.leftcontent h1{
+
+    overflow:hidden;
+    white-space:nowrap;
+
+    animation:
+    typing 2s steps(25),
+    cursor .5s infinite;
+
+}
+
+
+
+@keyframes typing{
+
+    from{
+        width:0;
+    }
+
+    to{
+        width:100%;
+    }
+
+}
+
+
+@keyframes cursor{
+
+    50%{
+        border-right:3px solid #B9824A;
+    }
+
+}
+.button1{
+    width:100px;
+    height:40px;
+    position: relative;
+    background-color:#B9824A ;
+    border:solid 2px #B9824A;
+    margin-top: 20px;
+    border-radius: 8px;
+    color: white;
+    
+}
+.button1:hover{
+    background:#fff;
+    color:#000;
+}
+
+/* Floating Animation */
+
+@keyframes float{
+
+    0%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-12px);
+    }
+
+    100%{
+        transform:translateY(0);
+    }
+
+}
+.button2{
+    width:150px;
+    height:40px;
+    position: relative;
+    background-color:#0a0a0a ;
+    border:solid 2px #B9824A;
+    
+    border-radius: 8px;
+    margin-top: 20px;
+    color: white;    
+}
+.button2:hover{
+    background:#B9824A;
+    color:#000;
+}
+
+/* Floating Animation */
+
+@keyframes float{
+
+    0%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-12px);
+    }
+
+    100%{
+        transform:translateY(0);
+    }
+
+}
+.buttons{
+    display: flex;
+    flex-direction: row;
+    gap:20px;
+    font-size: 17px;
+}
+
+.rightcontent{
+    position: relative;
+    width:100px;
+    height:590px;
+    left:200px;
+    
+    
+}
+.rect{
+    position: absolute;
+    width:300px;
+    height:360px;
+    background-color:#946945 ;
+    left:-50px;
+    box-shadow:
+        0 0 5px #000000,
+        0 0 15px rgba(200, 138, 61, 0.6),
+        0 0 30px rgba(200, 138, 61, 0.25);
+    top:50px;
+    z-index: 1;
+    
+
+}
+.rect1{
+    position:absolute;
+    width:300px;
+    height:300px;
+    border-radius:50%;
+    background-color:#3d2e1f;
+    left:140px;
+    top:200px;
+
+    box-shadow:
+        0 0 5px #C88A3D,
+        0 0 15px rgba(200,138,61,0.6),
+        0 0 30px rgba(200,138,61,0.25);
+
+    z-index:1;
+}
+
+
+/* glowing rotating border */
+.rect1::before{
+    content:"";
+    position:absolute;
+    inset:-5px;
+    border-radius:50%;
+
+    background:conic-gradient(
+        transparent,
+        #C88A3D,
+        transparent
+    );
+
+    animation:rotateGlow 2s linear infinite;
+    z-index:-1;
+}
+
+
+/* dashed rotating circle */
+.rect1::after{
+    content:"";
+    position:absolute;
+
+    width:340px;
+    height:340px;
+
+    top:50%;
+    left:50%;
+
+    transform:translate(-50%,-50%);
+
+    border-radius:50%;
+
+    border:3px dashed #C88A3D;
+
+    animation:rotateDashed 8s linear infinite;
+}
+
+
+/* glow rotation */
+@keyframes rotateGlow{
+
+    from{
+        transform:rotate(0deg);
+    }
+
+    to{
+        transform:rotate(360deg);
+    }
+
+}
+
+
+/* dashed circle rotation */
+@keyframes rotateDashed{
+
+    from{
+        transform:translate(-50%,-50%) rotate(0deg);
+    }
+
+    to{
+        transform:translate(-50%,-50%) rotate(360deg);
+    }
+
+}
+
+.profile{
+    position: absolute;
+    width:370px;
+    height:420px; 
+    top: 90px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow:
+        0 0 5px #C88A3D,
+        0 0 15px rgba(200, 138, 61, 0.6),
+        0 0 30px rgba(200, 138, 61, 0.25);
+    z-index: 2;
+    
+   
+
+}
+.profilepic{
+    width:370px;
+    height:420px;
+    border-radius: 10px;
+    
+  
+    
+}
+
+/*-------------------------------------------------------------------------------------------------------*/
+  
+.work{
+    width:100%;
+    height:650px;
+    position: relative;
+    background-color: #0a0a0a;
+    border-bottom:solid grey 1px;
+   
+}
+
+
+
+
+.pro{
+    color: white;
+    font-family: "Fraunces", serif;
+    position: absolute;
+    font-size: 30px;
+    font-weight: 500;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-color: #C88A3D;
+    margin-left: 700px;
+    margin-top:40px;
+}
+
+.projects{
+    width:100%;
+    height:400px;
+    position: absolute;
+    top:120px;
+    padding: 20px;
+    display: flex;
+    gap:90px;
+}
+
+.p1{
+    width:300px;
+    height:380px;
+     box-shadow: 
+        0 0 5px rgba(185, 130, 74, 0.5),
+        0 0 15px rgba(185, 130, 74, 0.3);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+     opacity:0;
+    transform:translateY(70px) scale(.9);
+
+    animation:cardPop linear both;
+
+transition:.4s;
+    animation-timeline:view();
+    animation-range:entry 20% cover 40%;
+
+}
+
+
+
+@keyframes cardPop{
+
+    from{
+
+        opacity:0;
+        transform:
+        translateY(70px)
+        scale(.8);
+
+    }
+
+
+    to{
+
+        opacity:1;
+        transform:
+        translateY(0)
+        scale(1);
+
+    }
+
+}
+   
+   
+
+
+
+.p1:hover{
+
+transform:
+translateY(-15px)
+scale(1.03);
+
+
+box-shadow:
+0 0 20px #B9824A;
+
+}
+
+
+
+
+.img{
+    width:290px;
+    height:200px;
+    border-radius: 20px 20px 0px 0px;
+    padding: 5px;
+}
+.text1{
+    color: #ffffff;
+    font-family:"Red Hat Text", sans-serif; 
+    font-weight: bold;
+    padding:10px;
+
+}
+.text2{
+    color: #555454;
+    font-family:"Red Hat Text", sans-serif;
+    padding:10px;
+
+}
+.text3{
+    color: #946945;
+    font-family: "Red Hat Text", sans-serif;
+    padding:10px;
+    text-decoration: none;
+}
+.text3:hover{
+    color: #b8b8b8;
+}
+.git-btn{
+    width:160px;
+    height:20px;
+    position: absolute;
+    top:570px;
+    left:670px;
+     box-shadow: 
+        0 0 5px rgba(185, 130, 74, 0.5),
+        0 0 15px rgba(185, 130, 74, 0.3);
+    text-decoration:none;
+    text-align: center;
+    padding:15px 35px;
+    border-radius:13px;
+    font-family:"Red Hat Text", sans-serif;
+    font-weight:500;
+    font-size: 18px;
+    transition:.4s;
+    
+    border: solid 1px #B9824A;
+    color: white;
+}
+.git-btn a{
+    text-decoration: none;
+}
+.git-btn:hover{
+    color: #B9824A;
+}
+/*--------------------------------------------------------------------------------------------------*/
+
+.skills{
+    width:100%;
+    height:450px;
+    background-color: #171717;
+    position: relative;
+    border-bottom: solid 1px grey;
+}
+.skill{
+    color: white;
+    font-family: "Fraunces", serif;
+    position: absolute;
+    font-size: 30px;
+    font-weight: 500;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-color: #C88A3D;
+    margin-left: 720px;
+    margin-top:40px;
+}
+.box{
+    width:100%;
+    height:400px;
+    position: absolute;
+    top:120px;
+    padding: 20px;
+    display: flex;
+    gap:150px;
+    
+}
+.box1{
+    width:180px;
+    height:200px;
+    background-color: #000000;
+    position: relative;
+    box-shadow: 
+        0 0 5px rgba(185, 130, 74, 0.5),
+        0 0 15px rgba(185, 130, 74, 0.3);
+    left:340px;
+    opacity:0;
+    transform:translateY(70px) scale(.9);
+
+    animation:skillCardPop linear both;
+    transition:.4s;
+
+    animation-timeline:view();
+    animation-range:entry 20% cover 40%;
+
+}
+
+
+
+@keyframes skillCardPop{
+
+    from{
+
+        opacity:0;
+        transform:
+        translateY(70px)
+        scale(.8);
+
+    }
+
+
+    to{
+
+        opacity:1;
+        transform:
+        translateY(0)
+        scale(1);
+
+    }
+
+}
+.box1:hover{
+
+    transform:
+    translateY(-15px)
+    scale(1.05);
+
+
+    box-shadow:
+    0 0 20px #B9824A;
+
+}
+
+
+.img1{
+    width:150px;
+    height:150px;
+    position: absolute;   
+    padding: 10px;
+}
+.info{
+    color: white;
+    position: absolute;
+    top:160px;
+    left:60px;
+    font-family: Red hat text,sans-serif ;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.about{
+    width:100%;
+    height:600px;
+    background:#000;
+    display:flex;
+    align-items:center;
+    justify-content:space-evenly;
+    border-bottom:  solid 1px gray;
+    opacity:0;
+
+transform:
+translateX(-80px);
+
+
+animation:
+aboutImage linear both;
+
+
+animation-timeline:view();
+
+animation-range:entry 20% cover 40%;
+
+}
+@keyframes aboutImage{
+
+from{
+
+opacity:0;
+transform:
+translateX(-80px);
+
+}
+
+
+to{
+
+opacity:1;
+transform:
+translateX(0);
+
+}
+
+}
+
+
+
+.img2{
+    width:450px;
+    height:500px;
+    object-fit:cover;
+    animation:float 4s ease-in-out infinite;
+    margin-left: -200px;
+
+}
+
+
+
+.right{
+    width:450px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    gap:30px;
+}
+
+
+
+.ab p{
+    color:white;
+    font-size:60px;
+    font-family:"Fraunces", serif;
+    margin-bottom:40px;
+    position:relative;
+    top:40px;
+    
+}
+
+
+
+.ab p::before{
+    content:"";
+    position:absolute;
+    top:-8px;
+    right:140px;
+
+    width:150%;
+    height:3px;
+
+    background:#C88A3D;
+
+    transform:scaleX(0);
+    transform-origin:right;
+    transition:.8s;
+}
+
+
+
+.about:hover .ab p::before{
+    transform:scaleX(1);
+}
+
+
+.para{
+    color:#8e8c8c;
+    font-size:18px;
+    line-height:30px;
+    transition:.5s;
+}
+
+.about:hover .para{
+    color:#d8d8d8;
+    transform:translateY(-10px);
+}
+
+
+@keyframes float{
+
+    0%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-12px);
+    }
+
+    100%{
+        transform:translateY(0);
+    }
+
+}
+
+.info2{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px 40px;
+    margin-bottom:40px;
+}
+
+.info1{
+    display:flex;
+    flex-direction:column;
+}
+
+.title{
+    color:#C88A3D;
+    font-size:14px;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    margin-bottom:5px;
+}
+
+.value{
+    color:white;
+    font-size:17px;
+}
+
+
+.resume-btn{
+    padding:14px 35px;
+    border:none;
+    background:#C88A3D;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+    border-radius:30px;
+    transition:.3s;
+    margin-top:-50px
+}
+.resume-btn:hover{
+    background:#fff;
+    color:#000;
+}
+
+/* Floating Animation */
+
+@keyframes float{
+
+    0%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-12px);
+    }
+
+    100%{
+        transform:translateY(0);
+    }
+
+}
+
+
+.contact{
+    width:100%;
+    background:#282727;
+    color:white;
+    padding:80px 120px 30px;
+    box-sizing:border-box;
+}
+
+
+.contact-top{
+    text-align:center;
+    border-bottom:1px solid #444;
+    padding-bottom:20px;
+    margin-top:-45px;
+}
+
+.contact-top h1{
+    font-family:"Fraunces", serif;
+    font-size:45px;
+    color:white;
+    line-height:60px;
+    .contact-top h1{
+
+opacity:0;
+
+animation:
+contactText linear both;
+
+animation-timeline:view();
+
+animation-range:entry 20% cover 40%;
+
+}
+
+
+
+@keyframes contactText{
+
+
+from{
+
+opacity:0;
+letter-spacing:10px;
+
+}
+
+
+to{
+
+opacity:1;
+letter-spacing:0;
+
+}
+
+
+}
+}
+
+.contact-text{
+    width:700px;
+    margin:20px auto;
+    color:#b8b8b8;
+    font-family:"Red Hat Text", sans-serif;
+    line-height:30px;
+    font-size:18px;
+}
+
+
+.contact-buttons{
+    display:flex;   
+    justify-content:center;
+    gap:30px;
+    margin-top:30px;
+    margin-left: 20px;;
+}
+
+.button3,
+.button4{
+
+    text-decoration:none;
+    padding:15px 35px;
+    border-radius:8px;
+    font-family:"Red Hat Text", sans-serif;
+    font-weight:700;
+    transition:.4s;
+}
+
+
+.button3{
+
+    background:#B9824A;
+    color:white;
+}
+
+.button3:hover{
+
+    background:white;
+    color:black;
+}
+
+
+.button4{
+
+    border:2px solid #B9824A;
+    color:#B9824A;
+}
+
+.button4:hover{
+
+    background:#B9824A;
+    color:white;
+}
+
+
+.contact-bottom{
+
+    display:flex;
+    justify-content:space-between;
+    margin-top:20px;
+    border-bottom:1px solid #444;
+   
+  
+}
+
+
+.left-footer h2{
+
+    font-family:"Fraunces", serif;
+    font-size:35px;
+    letter-spacing:3px;
+}
+
+.role{
+    
+    text-align: center;
+    color:#B9824A;
+    letter-spacing: 2px;
+    margin-top:15px;
+    font-size:18px;
+    margin-right: 100px;
+    font-family: "Fraunces", serif;
+}
+
+.available{
+
+    color:#6e6e6e;
+    margin-top:25px;
+    font-size:16px;
+    font-family: "Fraunces", serif;
+}
+
+.resume-btn2{
+
+    display:inline-block;
+    margin-top:35px;
+    text-decoration:none;
+    background:#B9824A;
+    color:white;
+    padding:14px 28px;
+    border-radius:8px;
+    transition:.4s;
+    font-family:"Red Hat Text", sans-serif;
+}
+
+.resume-btn2:hover{
+
+    background:white;
+    color:black;
+}
+
+
+.right-footer h3{
+
+    color:#B9824A;
+    margin-bottom:25px;
+    font-family:"Fraunces", serif;
+}
+
+.right-footer p{
+
+    margin-bottom:18px;
+    color:#d6d6d6;
+    font-family:"Red Hat Text", sans-serif;
+}
+
+
+.social{
+
+    display:flex;
+    gap:25px;
+    margin-top:30px;
+}
+
+.social a{
+
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+    font-family:"Red Hat Text", sans-serif;
+}
+
+.social a:hover{
+
+    color:#B9824A;
+}
+
+
+.copyright{
+
+    margin-left: 20px;
+    margin-top:10px;
+    padding-top:10px;
+    text-align:center;
+    color:#8c8c8c;
+    font-size:14px;
+    font-family:"Red Hat Text", sans-serif;
+}
+
+
+
+
+
+@media (max-width:500px){
+
+*{
+    box-sizing:border-box;
+}
+
+body{
+    overflow-x:hidden;
+}
+
+/* HEADER */
+
+.header{
+    height:60px;
+    padding:0 15px;
+}
+
+.name{
+    font-size:20px;
+    padding:18px 0;
+}
+
+.headercontent{
+    gap:12px;
+    margin:18px 0 0;
+    font-size:9px;
+    margin-top: 26px;
+}
+
+.headercontent p{
+    display:block;
+}
+
+.headercontent a::after{
+    content:none;
+}
+
+/* HOME */
+
+.home{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:flex-start;
+    height:auto;
+    padding:90px 20px 50px;
+}
+
+/* PROFILE FIRST */
+
+.rightcontent{
+    order:1;
+    position:relative;
+    width:100%;
+    height:360px;
+    left:0;
+    margin:0;
+}
+
+.rect{
+    display:none;
+}
+
+.rect1{
+    width:220px;
+    height:220px;
+    left:50%;
+    transform:translateX(-50%);
+    top:90px;
+}
+
+.profile{
+    width:280px;
+    height:320px;
+    left:50%;
+    transform:translateX(-50%);
+    top:20px;
+}
+
+.profilepic{
+    width:280px;
+    height:320px;
+}
+
+/* TEXT SECOND */
+
+.leftcontent{
+    order:2;
+    margin:20px 0 0;
+    font-size:18px;
+    text-align:center;
+    align-items:center;
+       opacity:0;
+    transform:translateY(60px);
+
+    animation:homeText linear both;
+    animation-timeline:view();
+    animation-range:entry 20% cover 40%;
+}
+
+
+@keyframes homeText{
+
+    from{
+        opacity:0;
+        transform:translateY(60px);
+        filter:blur(8px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+        filter:blur(0);
+    }
+
+}
+
+
+.leftcontent h1{
+    font-size:28px;
+}
+
+.buttons{
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+/* ABOUT */
+
+.about{
+    height:auto;
+    flex-direction:column;
+    padding:60px 20px;
+    gap:40px;
+}
+
+.left{
+    width:100%;
+    display:flex;
+    justify-content:center;
+}
+
+.img2{
+    width:260px;
+    height:330px;
+    margin:0;
+}
+
+.right{
+    width:100%;
+    text-align:center;
+    gap:20px;
+}
+
+.ab p{
+    font-size:38px;
+    top:0;
+}
+
+.ab p::before{
+    width:100%;
+    right:0;
+}
+
+.para{
+    font-size:16px;
+    line-height:28px;
+}
+
+.info2{
+    grid-template-columns:1fr;
+}
+
+.info1{
+    align-items:center;
+}
+
+.resume-btn{
+    margin-top:10px;
+    align-self:center;
+}
+
+/* WORK */
+
+.work{
+    height:auto;
+    padding:50px 0 120px;
+}
+
+.pro{
+    position:relative;
+    margin:0;
+    padding:0;
+    text-align:center;
+    font-size:32px;
+}
+
+.projects{
+    position:relative;
+    top:30px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:35px;
+    height:auto;
+    padding:0;
+}
+
+.p1{
+    width:300px;
+    height:auto;
+    padding-bottom:20px;
+}
+
+.img{
+    width:100%;
+    height:190px;
+}
+
+.git-btn{
+    width:250px;
+    height:30px;
+    text-align: center;
+    position:relative;
+    top:70px;
+    left:0;
+    transform:none;
+    display:block;
+    margin:0 auto;
+}
+.git-btn p{
+    position: absolute; 
+    top:2px; 
+    left:55px;
+}
+
+/* SKILLS */
+
+.skills{
+    height:auto;
+    padding:50px 0;
+}
+
+.skill{
+    position:relative;
+    margin:0;
+    text-align:center;
+    font-size:32px;
+}
+
+.box{
+    position:relative;
+    top:30px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:30px;
+    height:auto;
+    padding-bottom:30px;
+}
+
+.box1{
+    position:relative;
+    left:0;
+}
+.img1{
+    position: absolute;
+    left:15px;
+}
+
+/* CONTACT */
+
+.contact{
+    padding:60px 20px 20px;
+}
+
+.contact-top{
+    margin-top:0;
+}
+
+.contact-top h1{
+    font-size:30px;
+    line-height:40px;
+}
+
+.contact-text{
+    width:100%;
+    font-size:16px;
+    line-height:26px;
+}
+
+.contact-buttons{
+    flex-direction:column;
+    align-items:center;
+    gap:20px;
+    margin-left:0;
+}
+
+.button3,
+.button4{
+    width:180px;
+    text-align:center;
+}
+
+.contact-bottom{
+    flex-direction:column;
+    gap:40px;
+    text-align:center;
+}
+
+.left-footer h2{
+    font-size:30px;
+}
+
+.role{
+    margin-right:0;
+}
+
+.resume-btn2{
+    margin-top:20px;
+}
+
+.social{
+    justify-content:center;
+}
+
+.copyright{
+    margin-left:0;
+    font-size:12px;
+}
+
+}
+
+.leftcontent,
+.p1,
+.box1,
+.img2{
+
+animation-timeline:view();
+
+}
+.button1,
+.button2,
+.button3,
+.button4,
+.resume-btn,
+.resume-btn2{
+
+
+transition:.4s;
+
+}
+
+
+.button1:hover,
+.button2:hover,
+.button3:hover,
+.button4:hover,
+.resume-btn:hover,
+.resume-btn2:hover{
+
+
+transform:
+translateY(-5px);
+
+box-shadow:
+0 10px 25px rgba(185,130,74,.5);
+
+}
+
